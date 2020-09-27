@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB781382-BCE7-42BC-AC39-9834AA7651E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>library</RootNamespace>
+    <AssemblyName>library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a-alterbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="a-alterbook.designer.cs">
+      <DependentUpon>a-alterbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad-login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad-login.designer.cs">
+      <DependentUpon>ad-login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addbook.designer.cs">
+      <DependentUpon>addbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addbookcategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addbookcategory.designer.cs">
+      <DependentUpon>addbookcategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addreader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addreader.designer.cs">
+      <DependentUpon>addreader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_admin.Designer.cs">
+      <DependentUpon>add_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookmanageSK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookmanageSK.designer.cs">
+      <DependentUpon>bookmanageSK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="book_remainder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book_remainder.Designer.cs">
+      <DependentUpon>book_remainder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrowbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrowbook.designer.cs">
+      <DependentUpon>borrowbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bwbookname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bwbookname.designer.cs">
+      <DependentUpon>bwbookname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bwranking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bwranking.designer.cs">
+      <DependentUpon>bwranking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data.cs" />
+    <Compile Include="deletebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletebook.designer.cs">
+      <DependentUpon>deletebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletebookauthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletebookauthor.designer.cs">
+      <DependentUpon>deletebookauthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletebookname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletebookname.designer.cs">
+      <DependentUpon>deletebookname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletebookno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletebookno.designer.cs">
+      <DependentUpon>deletebookno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletebookpress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletebookpress.designer.cs">
+      <DependentUpon>deletebookpress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletereader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletereader.Designer.cs">
+      <DependentUpon>deletereader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletereadername.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletereadername.Designer.cs">
+      <DependentUpon>deletereadername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletereadernum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletereadernum.Designer.cs">
+      <DependentUpon>deletereadernum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="find.designer.cs">
+      <DependentUpon>find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instruction.Designer.cs">
+      <DependentUpon>instruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="libraryDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>libraryDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="managers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managers.designer.cs">
+      <DependentUpon>managers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myborrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Myborrow.designer.cs">
+      <DependentUpon>Myborrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noreturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noreturn.designer.cs">
+      <DependentUpon>noreturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="r-login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="r-login.designer.cs">
+      <DependentUpon>r-login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="r-personal view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="r-personal view.designer.cs">
+      <DependentUpon>r-personal view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="r-register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="r-register.designer.cs">
+      <DependentUpon>r-register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re-borrow news.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re-borrow news.designer.cs">
+      <DependentUpon>re-borrow news.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re-changinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re-changinformation.designer.cs">
+      <DependentUpon>re-changinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re-codelookbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re-codelookbook.designer.cs">
+      <DependentUpon>re-codelookbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re-education.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re-education.designer.cs">
+      <DependentUpon>re-education.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re-electronic book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re-electronic book.designer.cs">
+      <DependentUpon>re-electronic book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re-news.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re-news.designer.cs">
+      <DependentUpon>re-news.cs</DependentUpon>
+    </Compile>
+    <Compile Include="re-open class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re-open class.designer.cs">
+      <DependentUpon>re-open class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reader.Designer.cs">
+      <DependentUpon>reader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="readerSK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="readerSK.Designer.cs">
+      <DependentUpon>readerSK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnbook.designer.cs">
+      <DependentUpon>returnbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rnotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rnotice.designer.cs">
+      <DependentUpon>rnotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_borrow.Designer.cs">
+      <DependentUpon>search_borrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_reader.Designer.cs">
+      <DependentUpon>search_reader.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="a-alterbook.resx">
+      <DependentUpon>a-alterbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad-login.resx">
+      <DependentUpon>ad-login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addbook.resx">
+      <DependentUpon>addbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addbookcategory.resx">
+      <DependentUpon>addbookcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addreader.resx">
+      <DependentUpon>addreader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_admin.resx">
+      <DependentUpon>add_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookmanageSK.resx">
+      <DependentUpon>bookmanageSK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="book_remainder.resx">
+      <DependentUpon>book_remainder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrowbook.resx">
+      <DependentUpon>borrowbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bwbookname.resx">
+      <DependentUpon>bwbookname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bwranking.resx">
+      <DependentUpon>bwranking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletebook.resx">
+      <DependentUpon>deletebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletebookauthor.resx">
+      <DependentUpon>deletebookauthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletebookname.resx">
+      <DependentUpon>deletebookname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletebookno.resx">
+      <DependentUpon>deletebookno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletebookpress.resx">
+      <DependentUpon>deletebookpress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletereader.resx">
+      <DependentUpon>deletereader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletereadername.resx">
+      <DependentUpon>deletereadername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletereadernum.resx">
+      <DependentUpon>deletereadernum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="find.resx">
+      <DependentUpon>find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instruction.resx">
+      <DependentUpon>instruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managers.resx">
+      <DependentUpon>managers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myborrow.resx">
+      <DependentUpon>Myborrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noreturn.resx">
+      <DependentUpon>noreturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="r-login.resx">
+      <DependentUpon>r-login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="r-personal view.resx">
+      <DependentUpon>r-personal view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="r-register.resx">
+      <DependentUpon>r-register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re-borrow news.resx">
+      <DependentUpon>re-borrow news.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re-changinformation.resx">
+      <DependentUpon>re-changinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re-codelookbook.resx">
+      <DependentUpon>re-codelookbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re-education.resx">
+      <DependentUpon>re-education.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re-electronic book.resx">
+      <DependentUpon>re-electronic book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re-news.resx">
+      <DependentUpon>re-news.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re-open class.resx">
+      <DependentUpon>re-open class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reader.resx">
+      <DependentUpon>reader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="readerSK.resx">
+      <DependentUpon>readerSK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnbook.resx">
+      <DependentUpon>returnbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rnotice.resx">
+      <DependentUpon>rnotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_borrow.resx">
+      <DependentUpon>search_borrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_reader.resx">
+      <DependentUpon>search_reader.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="libraryDataSet.xsc">
+      <DependentUpon>libraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet.xss">
+      <DependentUpon>libraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet1.xsc">
+      <DependentUpon>libraryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet1.xss">
+      <DependentUpon>libraryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet10.xsc">
+      <DependentUpon>libraryDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet10.xss">
+      <DependentUpon>libraryDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet2.xsc">
+      <DependentUpon>libraryDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet2.xss">
+      <DependentUpon>libraryDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet3.xsc">
+      <DependentUpon>libraryDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet3.xss">
+      <DependentUpon>libraryDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet4.xsc">
+      <DependentUpon>libraryDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet4.xss">
+      <DependentUpon>libraryDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet5.xsc">
+      <DependentUpon>libraryDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet5.xss">
+      <DependentUpon>libraryDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet6.xsc">
+      <DependentUpon>libraryDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet6.xss">
+      <DependentUpon>libraryDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet7.xsc">
+      <DependentUpon>libraryDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet7.xss">
+      <DependentUpon>libraryDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet8.xsc">
+      <DependentUpon>libraryDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet8.xss">
+      <DependentUpon>libraryDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet9.xsc">
+      <DependentUpon>libraryDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="libraryDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>libraryDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="libraryDataSet9.xss">
+      <DependentUpon>libraryDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\透明.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\壁纸.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-0f05d2155db0a91659e1479373d047c4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\标.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\壁纸1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\章.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\标1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-0f05d2155db0a91659e1479373d047c41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-d4b06b2bc6f296091e4cbdb38b9aa02d.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
